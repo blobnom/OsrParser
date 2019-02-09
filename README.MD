@@ -25,8 +25,7 @@ Usage
 
  `go get github.com/fauzanardh/OsrParser`
 
- (optional) add your osu!api apikey to get the beatmap data
- edit the APIKEY from `$GOPATH/src/github.com/fauzanardh/OsrParser/constants.go`
+ (optional) add your osu!api apikey to get the beatmap data, edit the APIKEY from `$GOPATH/src/github.com/fauzanardh/OsrParser/constants.go`
 
  **How to use**
  ```go

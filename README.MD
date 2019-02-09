@@ -45,7 +45,8 @@ Usage
  }
  ```
 
- **Screenshot**
+ Screenshot
+ ----
  ![result_exmaple](example.png)
 
 Author

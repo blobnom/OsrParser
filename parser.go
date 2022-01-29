@@ -112,77 +112,80 @@ func ParseMods(mods uint32) (r []string, err error) {
 	if mods > 536870911 { // 536870911 is all of the mods turned on
 		err = errors.New("uint32 exceeds the mod limit")
 	} else {
+		if mods > 536870911 { // 536870911 is all of the mods turned on
+		err = errors.New("uint32 exceeds the mod limit")
+	} else {
 		if hasBit(uint64(mods), 0) {
-			r = append(r, "NoFail")
+			r = append(r, "NF")
 		}
 		if hasBit(uint64(mods), 1) {
-			r = append(r, "Easy")
+			r = append(r, "EZ")
 		}
 		if hasBit(uint64(mods), 2) {
-			r = append(r, "TouchDevice")
+			r = append(r, "TD")
 		}
 		if hasBit(uint64(mods), 3) {
-			r = append(r, "Hidden")
+			r = append(r, "HD")
 		}
 		if hasBit(uint64(mods), 4) {
-			r = append(r, "HardRock")
+			r = append(r, "HR")
 		}
 		if hasBit(uint64(mods), 5) {
-			r = append(r, "SuddenDeath")
+			r = append(r, "SD")
 		}
 		if hasBit(uint64(mods), 6) {
-			r = append(r, "DoubleTime")
+			r = append(r, "DT")
 		}
 		if hasBit(uint64(mods), 7) {
-			r = append(r, "Relax")
+			r = append(r, "RX")
 		}
 		if hasBit(uint64(mods), 8) {
-			r = append(r, "HalfTime")
+			r = append(r, "HT")
 		}
 		if hasBit(uint64(mods), 9) {
-			r = append(r, "Nightcore")
+			r = append(r, "NC")
 		}
 		if hasBit(uint64(mods), 10) {
-			r = append(r, "Flashlight")
+			r = append(r, "FL")
 		}
 		if hasBit(uint64(mods), 11) {
-			r = append(r, "Autoplay")
+			r = append(r, "AP")
 		}
 		if hasBit(uint64(mods), 12) {
-			r = append(r, "SpunOut")
+			r = append(r, "SO")
 		}
 		if hasBit(uint64(mods), 13) {
-			r = append(r, "Relax2")
+			r = append(r, "AP")
 		}
 		if hasBit(uint64(mods), 14) {
-			r = append(r, "Perfect")
+			r = append(r, "PF")
 		}
 		if hasBit(uint64(mods), 15) {
-			r = append(r, "Key4")
+			r = append(r, "4K")
 		}
 		if hasBit(uint64(mods), 16) {
-			r = append(r, "Key5")
+			r = append(r, "5K")
 		}
 		if hasBit(uint64(mods), 17) {
-			r = append(r, "Key6")
+			r = append(r, "6K")
 		}
 		if hasBit(uint64(mods), 18) {
-			r = append(r, "Key7")
+			r = append(r, "7K")
 		}
 		if hasBit(uint64(mods), 19) {
-			r = append(r, "Key8")
+			r = append(r, "8K")
 		}
 		if hasBit(uint64(mods), 20) {
-			r = append(r, "FadeIn")
+			r = append(r, "FI")
 		}
 		if hasBit(uint64(mods), 21) {
 			r = append(r, "Random")
 		}
 		if hasBit(uint64(mods), 22) {
-			r = append(r, "Cinema")
+			r = append(r, "CN")
 		}
 		if hasBit(uint64(mods), 23) {
-			r = append(r, "TargetPractice")
+			r = append(r, "TP")
 		}
 		if hasBit(uint64(mods), 24) {
 			r = append(r, "Key9")
@@ -191,13 +194,13 @@ func ParseMods(mods uint32) (r []string, err error) {
 			r = append(r, "Coop")
 		}
 		if hasBit(uint64(mods), 26) {
-			r = append(r, "Key1")
+			r = append(r, "1K")
 		}
 		if hasBit(uint64(mods), 27) {
-			r = append(r, "Key2")
+			r = append(r, "2K")
 		}
 		if hasBit(uint64(mods), 28) {
-			r = append(r, "Key3")
+			r = append(r, "3K")
 		}
 	}
 	return

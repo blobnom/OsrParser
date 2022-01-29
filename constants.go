@@ -18,6 +18,6 @@ const (
 )
 
 // Keys
-const (
+var (
 	APIKEY = "" // Enter your osu apikey, optional if you want to parse the beatmap
 )

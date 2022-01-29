@@ -4,7 +4,7 @@ OsrParser
 [![Version 1.0.0](https://img.shields.io/badge/stable-1.0.0-brightgreen.svg "Version 1.0.0")](https://github.com/fauzanardh/OsrParser) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Supported go version: 1.11](https://img.shields.io/badge/go-1.11-green.svg "Supported go versions: 1.11")](https://golang.org/dl/)
 
 
-Osu! Replay parser build with GO version 1.11
+Osu! Replay parser build with GO version 1.11 (modified for personal use)
 
 
 Refrence
